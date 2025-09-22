@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates automated provisioning and configuration of a Kubernetes (k3s) cluster on AWS EC2, complete with application deployment and Prometheus monitoring. Created as a technical assessment for VXG, it showcases infrastructure as code practices and modern DevOps tooling.
+This project demonstrates automated provisioning and configuration of a Kubernetes (k3s) cluster on AWS EC2, complete with application deployment and Prometheus monitoring.
 
 ## Features
 
