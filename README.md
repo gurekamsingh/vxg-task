@@ -263,15 +263,7 @@ ssh -i vxg-demo-key.pem ubuntu@<PUBLIC_IP> 'sudo tail -f /var/log/cloud-init-out
 - Grafana uses a default password - change it for production use
 - All services use NodePort - consider LoadBalancer or Ingress for production
 
-## Cost Estimation
 
-Running this demo continuously will incur AWS charges:
-
-- **EC2 t3.small**: ~$0.0208/hour ($15/month)
-- **EBS Storage**: 8GB gp2 ~$0.80/month
-- **Data Transfer**: Variable based on usage
-
-**Remember to clean up resources when done to avoid unnecessary charges!**
 
 ## Project Structure
 
