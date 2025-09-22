@@ -192,7 +192,7 @@ curl http://<PUBLIC_IP>:30080
 To remove all created resources:
 
 ```bash
-./deploy.sh cleanup
+./k3s-deployment.sh cleanup
 ```
 
 This will:
@@ -276,7 +276,7 @@ ssh -i vxg-demo-key.pem ubuntu@<PUBLIC_IP> 'sudo tail -f /var/log/cloud-init-out
 ├── k3s-deployment.sh              # Main deployment script
 ├── README.md             # This file
 ├── deployment-info.txt   # Generated after deployment
-└── vxg-demo-key.pem     # Generated SSH key (do not commit!)
+
 ```
 
 ## Contributing
