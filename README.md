@@ -285,4 +285,3 @@ MIT License - See LICENSE file for details
 
 ---
 
-**Note**: This is a demonstration project. For production deployments, consider using managed Kubernetes services like EKS, implementing proper CI/CD pipelines, and following security best practices.
