@@ -47,12 +47,12 @@ The IAM user/role needs the following permissions:
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd vxg-task
+   cd scripts
    ```
 
 2. **Make the script executable**
    ```bash
-   chmod +x k3s-deployment.shdeploy.sh
+   chmod +x k3s-deployment.sh
    ```
 
 3. **Set your AWS region (optional)**
@@ -62,7 +62,7 @@ The IAM user/role needs the following permissions:
 
 4. **Run the deployment**
    ```bash
-   .scripts/k3s-deployment.sh
+   bash k3s-deployment.sh
    ```
 
 5. **Wait for completion** (approximately 5-10 minutes for full setup)
