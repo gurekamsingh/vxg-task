@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates automated provisioning and configuration of a Kubernetes (k3s) cluster on AWS EC2, complete with application deployment and Prometheus monitoring. Created as a technical assessment for VXG, it showcases infrastructure as code practices and modern DevOps tooling.
+This project demonstrates automated provisioning and configuration of a Kubernetes (k3s) cluster on AWS EC2, complete with application deployment and Prometheus monitoring.
 
 ## Features
 
@@ -47,12 +47,12 @@ The IAM user/role needs the following permissions:
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd vxg-task
+   cd scripts
    ```
 
 2. **Make the script executable**
    ```bash
-   chmod +x k3s-deployment.shdeploy.sh
+   chmod +x k3s-deployment.sh
    ```
 
 3. **Set your AWS region (optional)**
@@ -62,7 +62,7 @@ The IAM user/role needs the following permissions:
 
 4. **Run the deployment**
    ```bash
-   .scripts/k3s-deployment.sh
+   bash k3s-deployment.sh
    ```
 
 5. **Wait for completion** (approximately 5-10 minutes for full setup)
@@ -148,6 +148,10 @@ The deployment automatically configures several metric sources:
 
    ```
 
+### Screenshots
+
+<img width="1847" height="943" alt="Screenshot 2025-09-22 025141" src="https://github.com/user-attachments/assets/e58f1213-bbeb-4a79-9de9-c0c6336b4d54" />
+
 ### Using Grafana Dashboards
 
 1. Access Grafana at `http://<PUBLIC_IP>:30300`
@@ -188,7 +192,7 @@ curl http://<PUBLIC_IP>:30080
 To remove all created resources:
 
 ```bash
-./deploy.sh cleanup
+./k3s-deployment.sh cleanup
 ```
 
 This will:
@@ -263,15 +267,7 @@ ssh -i vxg-demo-key.pem ubuntu@<PUBLIC_IP> 'sudo tail -f /var/log/cloud-init-out
 - Grafana uses a default password - change it for production use
 - All services use NodePort - consider LoadBalancer or Ingress for production
 
-## Cost Estimation
 
-Running this demo continuously will incur AWS charges:
-
-- **EC2 t3.small**: ~$0.0208/hour ($15/month)
-- **EBS Storage**: 8GB gp2 ~$0.80/month
-- **Data Transfer**: Variable based on usage
-
-**Remember to clean up resources when done to avoid unnecessary charges!**
 
 ## Project Structure
 
@@ -280,7 +276,7 @@ Running this demo continuously will incur AWS charges:
 ├── k3s-deployment.sh              # Main deployment script
 ├── README.md             # This file
 ├── deployment-info.txt   # Generated after deployment
-└── vxg-demo-key.pem     # Generated SSH key (do not commit!)
+
 ```
 
 ## Contributing
@@ -293,4 +289,3 @@ MIT License - See LICENSE file for details
 
 ---
 
-**Note**: This is a demonstration project. For production deployments, consider using managed Kubernetes services like EKS, implementing proper CI/CD pipelines, and following security best practices.
