@@ -148,6 +148,10 @@ The deployment automatically configures several metric sources:
 
    ```
 
+### Screenshots
+
+<img width="1847" height="943" alt="Screenshot 2025-09-22 025141" src="https://github.com/user-attachments/assets/e58f1213-bbeb-4a79-9de9-c0c6336b4d54" />
+
 ### Using Grafana Dashboards
 
 1. Access Grafana at `http://<PUBLIC_IP>:30300`
