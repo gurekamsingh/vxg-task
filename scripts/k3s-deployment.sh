@@ -16,7 +16,7 @@ INSTANCE_NAME="vxg-k3s-demo"
 KEY_NAME="vxg-demo-key"
 SECURITY_GROUP_NAME="vxg-k3s-sg"
 AMI_ID="ami-0cfde0ea8edd312d4"
-INSTANCE_TYPE="t3.small"
+INSTANCE_TYPE="c7i-flex.large"
 REGION="${AWS_REGION:-us-east-2}"
 USER_DATA_FILE="./k3s-userdata.sh"
 
