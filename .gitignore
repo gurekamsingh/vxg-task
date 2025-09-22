@@ -1,0 +1,4 @@
+# Key files (DO NOT COMMIT)
+*.pem
+kubeconfig
+kubeconfig.yaml

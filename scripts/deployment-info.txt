@@ -1,0 +1,18 @@
+VXG K3s Deployment Information
+==============================
+Date: Mon, Sep 22, 2025  4:16:20 AM
+Instance ID: i-02a8c1eee3e4a7017
+Public IP: 18.117.250.244
+Region: us-east-2
+Security Group: sg-03d1320d8f738a3de
+Key Pair: vxg-demo-key
+
+Access URLs:
+- SSH: ssh -i vxg-demo-key.pem ubuntu@18.117.250.244
+- Nginx: http://18.117.250.244:30080
+- Prometheus: http://18.117.250.244:30090
+- Grafana: http://18.117.250.244:30300
+
+Grafana Credentials:
+- Username: admin
+- Password: vxg-demo-2024
